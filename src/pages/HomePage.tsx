@@ -10,6 +10,8 @@ export const HomePage = () => {
   const [placeSelected, setPlaceSelected] = useState({} || null)
 
   const handleChange = (e) => {
+    setPlaceSelected(null);
+    setPlaces([]);
     setCity(e.target.value);
   }
 
@@ -68,7 +70,7 @@ export const HomePage = () => {
         <Grid item mt={8} xs={6} sx={{width: '100%'}}>
           <Typography>Write here the place where you  want to travel</Typography>
             <TextField id="place-input" label="Place:" value={city} variant="outlined" onChange={handleChange} fullWidth />
-            <Button type="submit" variant="contained" onClick={onSearchPlaces}>Search places</Button>
+            <Button type="submit" disabled={city === ''}  variant="contained" onClick={onSearchPlaces} >Search places</Button>
         </Grid>
   
       {
