@@ -1,30 +1,61 @@
-# React + TypeScript + Vite
+# Reservamos Code Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Welcome!**  
 
-Currently, two official plugins are available:
+This challenge lets you showcase your skills building an application to check the weather in the place you want to visit.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project uses the API of [OpenWater](https://openweathermap.org/forecast5) and API of Reservamos ``https://search.reservamos.mx/api/v2/places``.
 
-## Expanding the ESLint configuration
+**Requirements:**
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+* **Node.js:** Ensure you have version 20 or higher installed. Verify it with `node -v` in your terminal.
+* **Browser:** You'll need a modern browser (Chrome, Firefox, Edge, etc.) to run the application.
 
-- Configure the top-level `parserOptions` property like this:
+**Instructions:**
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+1. **Clone or Download the Project:**
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+   **a. Git (comfortable users):**
+
+      ```bash
+      git clone git@github.com:MartinRob13/check-weather-app.git
+      ```
+
+   **b. Download:** Alternatively, download the project as a ZIP from your GitHub repository and extract it to your desired location.
+
+2. **Install Dependencies:**
+
+   Open your terminal or command prompt, navigate to the project directory, and run:
+
+   ```bash
+   npm install
+
+3. **Run the Application:**
+
+  Start the development server with:
+
+  ```bash
+  npm run dev
+  ```
+
+
+This launches the application in your default browser, usually at http://localhost:5173/.
+
+![alt text](image.png)
+
+
+
+4. **Next Steps (Optional):**
+
+  This version can be improved:
+
+  - UI Improvements: Enhance the visual appeal and user experience for the weather list.
+  - Component Structure: Break down the code into smaller, reusable components for better organization and maintainability.
+  - Loading Indicator: Integrate a visual element (e.g., loading spinner, progress bar) to indicate weather data fetching.
+  - Side effects: There is one side effect that makes that sometimes the first change of the place doenst show the weather data.
+  
+**Developer:**
+
+[Martin Robledo](https://github.com/MartinRob13)
+
+Email: martrob@gmail.com

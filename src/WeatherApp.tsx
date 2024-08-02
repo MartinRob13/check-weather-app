@@ -1,12 +1,12 @@
 import React from 'react'
 import { AppLayout } from './layout/AppLayout'
+import { HomePage } from './pages/HomePage'
 
 export const WeatherApp = () => {
   return (
     <>
         <AppLayout >
-            <h1>app</h1>
-
+            <HomePage />
         </AppLayout>
     </>
   )
